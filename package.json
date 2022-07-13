@@ -1,0 +1,25 @@
+{
+    "name": "api_sca",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./home/iniciando.js",
+    "scripts": {
+        "start": "nodemon"
+
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.20.0",
+        "cookie-parser": "^1.4.6",
+        "debug": "^4.3.4",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "hbs": "^4.2.0",
+        "http-errors": "^2.0.0",
+        "mongodb": "^4.7.0",
+        "mongoose": "^6.3.6",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.19"
+    }
+}
