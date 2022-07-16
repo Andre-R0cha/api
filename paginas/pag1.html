@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>SCA Controller</title>
+</head>
+
+<body style="padding-top: 190px">
+    <header>
+        <nav id="navbar_top" class="navbar fixed-top navbar-dark bg-light">
+            <div class="container-fluid bg-light" style="padding-top: 5px; padding-bottom: 5px">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center text-center">
+                        <img src="logomarca.png" class="img-fluid" style="padding-left: 10px; padding-right: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark">
+                <a class="navbar-brand" href="#">SCA Controller</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Início <span class="sr-only">(*)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="setup.html">Configuração</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="restart.html">Reiniciar</a>
+                        </li>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+            <div class="container-fluid" style="padding-top: 5px; padding-bottom: 5px; background-color:rgb(60, 216, 120)">
+                <h5 class="text-center">Bem vindo à Controladora SCA</h5>
+            </div>
+        </nav>
+    </header>
+
+    <div class="table-fluid">
+        <table class="table">
+            <tr class="d-sm-table-row">
+                <th>Nome da Controladora</th>
+                <td>#id#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Acesso Livre</th>
+                <td>#freeAccess#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Acesso Remoto</th>
+                <td>#remoteAccess#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Número de Usuários</th>
+                <td>#usersCount#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Número de Eventos</th>
+                <td>#eventsCount#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Memória Livre</th>
+                <td>#freeMemory#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Tempo Ativo</th>
+                <td>#activeTime#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Horário Local</th>
+                <td colspan="3">#localTime#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Endereço MAC</th>
+                <td>#macAddress#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Endereço Ip</th>
+                <td>#netStaticIp#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Máscara de Rede</th>
+                <td>#netNetmask#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Gateway</th>
+                <td>#netGateway#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>Porta de Rede</th>
+                <td>#netPort#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>DNS Primário</th>
+                <td>#netDnsPrimary#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>DNS Secundário</th>
+                <td>#netDnsSecondary#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>MQTT Primário</th>
+                <td>#netMqttPrimay#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>MQTT Secundário</th>
+                <td>#netMqttSecondary#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>NTP Primário</th>
+                <td>#netNtpPrimay#</td>
+            </tr>
+            <tr class="d-sm-table-row">
+                <th>NTP Secundário</th>
+                <td>#netNtpSecondary#</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted" style="padding-top: 2%; padding-bottom: 2%">
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>NUTES
+                    </h6>
+                    <p>
+                        Núcleo de Tecnologias Estratégicas em Saúde
+                    </p>
+                    <p>
+                        Rua Baraúnas, 349. Bairro Universitário. Campina Grande - PB. 58.429-500
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Contato
+                    </h6>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        nutes@uepb.edu.br
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i>+55 83 3315 3336</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center bg-dark p-2">
+        © 2022 -
+        <a class="text-reset fw-bold" href="http://nutes.uepb.edu.br/" target="_blank">nutes.uepb.edu.br</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</html>

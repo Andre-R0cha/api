@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>>
+    <title>SCA Controller</title>
+</head>
+
+<body style="padding-top: 190px">
+
+    <header>
+        <nav id="navbar_top" class="navbar fixed-top navbar-dark bg-light">
+            <div class="container-fluid bg-light" style="padding-top: 5px; padding-bottom: 5px">
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center text-center">
+                        <img src="logomarca.png" class="img-fluid" style="padding-left: 10px; padding-right: 10px;">
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid bg-dark">
+                <a class="navbar-brand" href="#">SCA Controller</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav" aria-controls="main_nav" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Configuração <span class="sr-only">(*)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="restart.html">Reiniciar</a>
+                        </li>
+                    </ul>
+                </div> <!-- navbar-collapse.// -->
+            </div> <!-- container-fluid.// -->
+            <div class="container-fluid" style="padding-top: 5px; padding-bottom: 5px; background-color:lightskyblue">
+                <h5 class="text-center">Configuração do Módulo</h5>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+
+        <!-- Geral -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <h3>Geral</h3>
+            </div>
+        </div>
+
+        <!-- Id -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <label for="id" class="form-label">Nome da Controladora</label>
+                <input type="text" class="form-control" id="#id#" placeholder=#id#>
+            </div>
+        </div>
+        <div>
+            &nbsp;
+        </div>
+        <!-- freeAccess -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="#freeAccess#">
+                    <label class="form-check-label" for="#freeAccess#">Acesso Livre</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            &nbsp;
+        </div>
+        <!-- remoteAccess -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="#remoteAccess#">
+                    <label class="form-check-label" for="#remoteAccess#">Acesso Remoto</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            &nbsp;
+        </div>
+        <!-- maxUsers -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <label for="maxUsers" class="form-label">Número máximo de usuários</label>
+                <input type="text" class="form-control" id="#maxUsers#" placeholder=#maxUsers#>
+            </div>
+        </div>
+        <div>
+            &nbsp;
+        </div>
+        <!-- localTime -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="#localTime#">
+                    <label class="form-check-label" for="#localTime#">Utilizar horário local</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            &nbsp;
+        </div>
+
+        <!-- logEvents -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="#logEvents#">
+                    <label class="form-check-label" for="#logEvents#">Log de Eventos</label>
+                </div>
+            </div>
+        </div>
+        <div>
+            &nbsp;
+        </div>
+        <!-- maxEvents -->
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <label for="maxEvents" class="form-label">Número máximo de Eventos Registrados</label>
+                <input type="text" class="form-control" id="#maxEvents#" placeholder=#maxEvents#>
+            </div>
+        </div>
+        <div>
+            &nbsp;
+        </div>
+
+    </div>
+
+
+    <!-- STA -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h3>Configurações de Rede</h3>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+
+    <!-- StaIp -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="staIp" class="form-label">Endereço IP</label>
+            <input type="text" class="form-control" id="#staIp#" placeholder=#staIp#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+
+    <!-- staStaticIp -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="#staStaticIp#">
+                <label class="form-check-label" for="#staStaticIp#">IP Estático</label>
+            </div>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- StaIp -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="staIp" class="form-label">Endereço IP</label>
+            <input type="text" class="form-control" id="#staIp#" placeholder=#staIp#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- StaNetmask -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="staNetmask" class="form-label">Máscara de Rede</label>
+            <input type="text" class="form-control" id="#staNetmask#" placeholder=#staNetmask#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- StaGateway -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="staGateway" class="form-label">Gateway</label>
+            <input type="text" class="form-control" id="#staGateway#" placeholder=#staGateway#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- staUseDns -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="#staUseDns#">
+                <label class="form-check-label" for="#staUseDns#">Utilizar DNS</label>
+            </div>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- staDnsPrimary -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="staDnsPrimary" class="form-label">DNS Primário</label>
+            <input type="text" class="form-control" id="#staDnsPrimary#" placeholder=#staDnsPrimary#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- staDnsSecondary -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="staDnsSecondary" class="form-label">DNS Secundário</label>
+            <input type="text" class="form-control" id="#staDnsSecondary#" placeholder=#staDnsSecondary#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- staSsid -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="staSsid" class="form-label">SSID</label>
+            <input type="text" class="form-control" id="#staSsid#" placeholder=#staSsid#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- staPassword -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="staPassword" class="form-label">Senha de Rede</label>
+            <input type="text" class="form-control" id="#staPassword#" placeholder=#staPassword#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+
+    <!-- MQTT -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h3>Serviço MQTT</h3>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- mqttPrimary -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="#mqttPrimary#">
+                <label class="form-check-label" for="#mqttPrimary#">Servidor Primário</label>
+            </div>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- mqttPrimaryIp -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="mqttPrimaryIp" class="form-label">Endereço IP</label>
+            <input type="text" class="form-control" id="#mqttPrimaryIp#" placeholder=#mqttPrimaryIp#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- mqttPrimaryPort -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="mqttPrimaryPort" class="form-label">Porta</label>
+            <input type="text" class="form-control" id="#mqttPrimaryPort#" placeholder=#mqttPrimaryPort#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- mqttPrimaryUsername -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="mqttPrimaryUsername" class="form-label">Usuário</label>
+            <input type="text" class="form-control" id="#mqttPrimaryUsername#" placeholder=#mqttPrimaryUsername#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- mqttPrimaryPassword -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="mqttPrimaryPassword" class="form-label">Senha</label>
+            <input type="text" class="form-control" id="#mqttPrimaryPassword#" placeholder=#mqttPrimaryPassword#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+
+
+    <!-- mqttSecondary -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="#mqttSecondary#">
+                <label class="form-check-label" for="#mqttSecondary#">Servidor Secundário</label>
+            </div>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+
+    <!-- mqttSecondaryIp -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="mqttSecondaryIp" class="form-label">Endereço IP</label>
+            <input type="text" class="form-control" id="#mqttSecondaryIp#" placeholder=#mqttSecondaryIp#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- mqttSecondaryPort -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="mqttSecondaryPort" class="form-label">Porta</label>
+            <input type="text" class="form-control" id="#mqttSecondaryPort#" placeholder=#mqttSecondaryPort#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- mqqtSecondaryUsername -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="mqqtSecondaryUsername" class="form-label">Usuário</label>
+            <input type="text" class="form-control" id="#mqqtSecondaryUsername#" placeholder=#mqqtSecondaryUsername#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- mqttSecondaryPassword -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="mqttSecondaryPassword" class="form-label">Senha</label>
+            <input type="text" class="form-control" id="#mqttSecondaryPassword#" placeholder=#mqttSecondaryPassword#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- mqttPublishTimeout -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="mqttPublishTimeout" class="form-label">Timeout para Publicação (segundos)</label>
+            <input type="text" class="form-control" id="#mqttPublishTimeout#" placeholder=#mqttPublishTimeout#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+
+
+    <!-- NTP -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h3>Serviço NTP</h3>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- ntpPrimary -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="#ntpPrimary#">
+                <label class="form-check-label" for="#ntpPrimary#">Servidor Primário</label>
+            </div>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- ntpPrimaryIp -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="ntpPrimaryIp" class="form-label">Endereço IP</label>
+            <input type="text" class="form-control" id="#ntpPrimaryIp#" placeholder=#ntpPrimaryIp#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- ntpSecondary -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="#ntpSecondary#">
+                <label class="form-check-label" for="#ntpSecondary#">Servidor Secundário</label>
+            </div>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- ntpSecondaryIp -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="ntpSecondaryIp" class="form-label">Endereço IP</label>
+            <input type="text" class="form-control" id="#ntpSecondaryIp#" placeholder=#ntpSecondaryIp#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- ntpRequestTimeout -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="ntpRequestTimeout" class="form-label">Timeout Requisição (segundos)</label>
+            <input type="text" class="form-control" id="#ntpRequestTimeout#" placeholder=#ntpRequestTimeout#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+
+    <!-- Application Server -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <h3>Serviço de Aplicação</h3>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- appServer -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="#appServer#">
+                <label class="form-check-label" for="#appServer#">Serviço de Aplicação</label>
+            </div>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- appServerIp -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="appServerIp" class="form-label">Endereço IP</label>
+            <input type="text" class="form-control" id="#appServerIp#" placeholder=#appServerIp#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <!-- appServerTimeout -->
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <label for="appServerTimeout" class="form-label">Timeout (segundos)</label>
+            <input type="text" class="form-control" id="#appServerTimeout#" placeholder=#appServerTimeout#>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+
+
+    <!-- Salvar Configurações -->
+    <div class="text-center gap-2">
+        <p>Salvar as configurações da controladora.</p>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="d-grid gap-2 col-10">
+            <button class="btn btn-block btn-primary btn-lg" type="button">Salvar</button>
+        </div>
+    </div>
+    <div>
+        &nbsp;
+    </div>
+
+
+
+    </div>
+
+
+</body>
+
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted" style="padding-top: 2%; padding-bottom: 2%">
+
+    <!-- Copyright -->
+    <div class="text-center bg-dark p-2">
+        © 2022 -
+        <a class="text-reset fw-bold" href="http://nutes.uepb.edu.br/" target="_blank">nutes.uepb.edu.br</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</html>
